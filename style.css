@@ -1,0 +1,183 @@
+body {
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.bookmark {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  height: 40px;
+  width: 40px;
+  padding: 4px;
+}
+.clock-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 55px;
+  height: 20px;
+  font-size: 28px;
+}
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  height: 15px;
+  font-size: 18px;
+}
+.navbar-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  background-color: rgba(110, 110, 110, 0.278);
+  backdrop-filter: blur(4px);
+  filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.358));
+  border-color: rgba(255, 255, 255, 0.463);
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  position: fixed;
+  bottom: 50px;
+  width: 50%;
+  border-radius: 12px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+.navbar a:hover {
+  background-color: rgba(64, 64, 64, 0.278);
+  color: white;
+}
+input {
+  height: 28px;
+  width: 70%;
+  color: white;
+  background-color: rgb(55, 55, 55, 0.779);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+.bookmark-name {
+  margin-top: 4px;
+}
+.bookmark-link {
+  margin-top: 4px;
+}
+.bookmark-image {
+  margin-top: 4px;
+}
+.gear-wrapper {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+.gear-button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gear-icon {
+  height: 30px;
+  width: 30px;
+}
+dialog {
+  background-color: rgba(110, 110, 110, 0.278);
+  backdrop-filter: blur(4px);
+  border: none;
+  border-color: rgba(255, 255, 255, 0.463);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 50%;
+  height: 50%;
+  color: white;
+}
+.closeDialogButton {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}
+.dialogTitle {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.dialog-text {
+  margin-top: 10px;
+  color: white;
+  font-size: medium;
+  margin-bottom: 5px;
+}
+.closeDialogButton {
+  background-color: rgba(55, 55, 55, 0.779);
+  border: none;
+  border-radius: 5px;
+  width: 15%;
+  height: 10%;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  top: 12px;
+  right: 150%;
+}
+.searchbar-wrapper {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  background-color: rgba(146, 146, 146, 0.278);
+  backdrop-filter: blur(4px);
+  filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.358));
+  border-color: rgba(255, 255, 255, 0.463);
+  border-width: 1px;
+  border-style: solid;
+  overflow: hidden;
+  position: fixed;
+  left: 30%;
+  bottom: 200px;
+  width: 40%;
+  border-radius: 12px;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 98%;
+  background-color: rgba(110, 110, 110, 0.278);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
