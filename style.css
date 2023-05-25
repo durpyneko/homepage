@@ -275,8 +275,7 @@ dialog {
   transform: rotate(-180deg);
 }
 .select-menu.active .options {
-  display: block;
-  opacity: 0;
+  display: none;
   z-index: 10;
   animation-name: fadeInDown;
   -webkit-animation-name: fadeInDown;
