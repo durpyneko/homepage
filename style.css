@@ -73,30 +73,12 @@ input {
 }
 .bookmark-name {
   margin-top: 4px;
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
 }
 .bookmark-link {
   margin-top: 4px;
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
 }
 .bookmark-image {
   margin-top: 4px;
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-}
-.background {
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
 }
 .gear-wrapper {
   display: flex;
@@ -139,6 +121,11 @@ dialog {
 }
 .closeDialogButton {
   background-color: rgba(55, 55, 55, 0.779);
+  border: none;
+  border-radius: 5px;
+  border-color: rgba(255, 255, 255, 0.463);
+  border-width: 1px;
+  border-style: solid;
   width: 80px;
   height: 40px;
   font-size: 20px;
@@ -147,10 +134,6 @@ dialog {
   position: absolute;
   bottom: 8px;
   right: 8px;
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
 }
 .tooltip {
   position: relative;
@@ -201,9 +184,7 @@ dialog {
 }
 .addbookmark-button {
   background-color: rgba(55, 55, 55, 0.779);
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
+  border: none;
   border-radius: 5px;
   width: 80px;
   height: 48px;
