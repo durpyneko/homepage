@@ -3,5 +3,5 @@ Custom 'homepage' written in vanilla HTML, Javascript and CSS.
 
 'add/remove bookmarks' and other features to be fully added
 
-![Preview1](https://github.com/iDurpyDude12/homepage/assets/89787577/7105f791-38d6-4cb4-ba86-90c65eb04d99)
-![Preview2](https://github.com/iDurpyDude12/homepage/assets/89787577/85dd6b24-0aea-46a4-b4d4-ac67ea9222eb)
+![Preview1](https://github.com/iDurpyDude12/homepage/assets/89787577/55f98603-a397-4d41-ab4c-ef28bd670c7a)
+![Preview2](https://github.com/iDurpyDude12/homepage/assets/89787577/d95eb604-1733-4375-9299-c59e050dbac8)
