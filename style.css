@@ -169,6 +169,9 @@ dialog {
   border: none;
   border-radius: 5px;
   padding: 8px;
+  bottom: 200px;
+  position: absolute;
+  width: 480px;
 }
 .addbookmark-button {
   background-color: rgba(55, 55, 55, 0.779);
