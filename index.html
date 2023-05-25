@@ -59,41 +59,42 @@
     <dialog>
       <div class="dialogTitle">Settings</div>
       <div class="dialog-flex-container">
-        <div class="dialog-flex-container">
-          <div class="dialog-text">Image background</div>
-        </div>
-        <div class="input-wrapper">
-          <input
-            id="background"
-            class="background"
-            placeholder="Background image link..."
-          />
-        </div>
-        <div class="dialog-flex-container">
-          <div class="dialog-text">Add bookmark</div>
-        </div>
-        <div class="input-wrapper">
-          <input
-            id="bookmark-name"
-            class="bookmark-name"
-            placeholder="Bookmark name..."
-          />
-        </div>
-        <div class="input-wrapper">
-          <input
-            id="bookmark-link"
-            class="bookmark-link"
-            placeholder="Bookmark link..."
-          />
-        </div>
-        <div class="input-wrapper">
-          <input
-            id="bookmark-image"
-            class="bookmark-image"
-            placeholder="Bookmark image..."
-          />
+        <div class="dialog-text">Image background</div>
+      </div>
+      <div class="input-wrapper">
+        <input
+          id="background"
+          class="background"
+          placeholder="Background image link..."
+        />
+      </div>
+      <div class="select-menu active">
+        <div class="select-btn" id="addbookmark-dropdown">
+          <span class="sBtn-text"
+            >Add bookmark<img
+              src="assets/arrow-16.png"
+              class="arrow arrow-down"
+              id="arrow"
+          /></span>
           <button class="addbookmark-button">Add</button>
         </div>
+        <ul class="options">
+          <input
+            id="bookmark-name"
+            class="bookmark-name option"
+            placeholder="Bookmark name..."
+          />
+          <input
+            id="bookmark-link"
+            class="bookmark-link option"
+            placeholder="Bookmark link..."
+          />
+          <input
+            id="bookmark-image"
+            class="bookmark-image option"
+            placeholder="Bookmark image..."
+          />
+        </ul>
         <button class="closeDialogButton" onclick="closeDialog()">Close</button>
       </div>
     </dialog>
