@@ -9,4 +9,4 @@ Features I want to add:
 - [ ] notes
 
 ![Preview1](https://github.com/iDurpyDude12/homepage/assets/89787577/8e2b9fc4-c95a-4b38-aea5-7d3a51468eda)
-![Preview2](https://github.com/iDurpyDude12/homepage/assets/89787577/aa9fb032-ce74-4c33-8f4b-f157a5f2d771)
+![Preview2](https://github.com/iDurpyDude12/homepage/assets/89787577/bf1eb6b5-5543-4339-9424-990cc6921fc0)
