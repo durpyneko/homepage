@@ -3,7 +3,7 @@ Custom 'homepage' written in vanilla HTML, Javascript and CSS.
 
 Features I want to add:
 - [ ] add/remove bookmarks
-- [ ] dropdown menu for add bookmark section
+- [x] dropdown menu for add bookmark section
 - [ ] maybe some animations? toggle on/off button
 - [ ] save settings to json file
 - [ ] notes
