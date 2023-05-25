@@ -158,19 +158,7 @@ dialog {
 .searchbar-wrapper {
   display: flex;
   justify-content: center;
-  justify-self: center;
-  background-color: rgba(146, 146, 146, 0.278);
-  backdrop-filter: blur(4px);
-  filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.358));
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
-  overflow: hidden;
-  position: fixed;
-  left: 30%;
-  bottom: 200px;
-  width: 40%;
-  border-radius: 12px;
+  align-items: center;
 }
 .searchbar {
   display: flex;
