@@ -20,7 +20,7 @@
       <h3 id="date"></h3>
     </div>
     <div class="navbar-wrapper">
-      <div class="navbar">
+      <div class="navbar" id="navbar">
         <a href="https://youtube.com">
           <img
             class="bookmark"
@@ -76,7 +76,6 @@
               class="arrow arrow-down"
               id="arrow"
           /></span>
-          <button class="addbookmark-button">Add</button>
         </div>
         <ul class="options">
           <input
@@ -94,6 +93,9 @@
             class="bookmark-image option"
             placeholder="Bookmark image..."
           />
+          <button class="addbookmark-button" onclick="newBookmark()">
+            Add
+          </button>
         </ul>
         <div style="display: none">
           <input
