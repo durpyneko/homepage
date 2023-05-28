@@ -10,6 +10,45 @@ const optionMenu = document.querySelector(".select-menu"),
   selectBtn = optionMenu.querySelector(".select-btn"),
   options = optionMenu.querySelectorAll(".option"),
   sBtn_text = optionMenu.querySelector(".sBtn-text");
+const bookmarkName = document.getElementById("bookmark-name");
+const bookmarkLink = document.getElementById("bookmark-link");
+const bookmarkImage = document.getElementById("bookmark-image");
+const navbar = document.getElementById("navbar");
+let origionalWidth = document.getElementById("navbar").style.width;
+
+function newBookmark() {
+  //bookmark
+  localStorage.setItem("bookmarkName", `${bookmarkName.value}`);
+  localStorage.setItem("bookmarkLink", `${bookmarkLink.value}`);
+  localStorage.setItem("bookmarkImage", `${bookmarkImage.value}`);
+  console.log("Set bookmark to local storage");
+}
+if (localStorage) {
+  function createCustomElement(anchorText, anchorLink) {
+    var aTag = document.createElement("a");
+    aTag.href = anchorLink;
+    aTag.innerHTML = anchorText;
+
+    return aTag;
+  }
+  function createCustomImage(imgSrc) {
+    let imgTag = document.createElement("img");
+    imgTag.src = imgSrc;
+
+    return imgTag;
+  }
+  let bookmarkName = localStorage.getItem("bookmarkName");
+  let bookmarkLink = localStorage.getItem("bookmarkLink");
+  let bookmarkImage = localStorage.getItem("bookmarkImage");
+
+  var parent = document.getElementById("navbar");
+  var customElement = createCustomElement(bookmarkName, bookmarkLink);
+  let customImage = createCustomImage(bookmarkImage);
+  document.getElementById("navbar").style.width = 400 + 60 + "px";
+  parent.appendChild(customElement);
+  /* parent.appendChild(customImage); */
+  console.log("Got bookmark(s) from local storage");
+}
 
 selectBtn.addEventListener("click", () =>
   optionMenu.classList.toggle("active")
@@ -102,6 +141,9 @@ let months = [
 ];
 var day;
 var month;
+
+clock.innerHTML = "00:00:00";
+console.log("time set!");
 
 setInterval(() => {
   var time = new Date();
