@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      rel="shortcut icon"
+      href="https://cdn.discordapp.com/attachments/1039951514631933992/1083404187989196820/senko_bread.png"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock-wrapper">
+      <h1 id="clock"></h1>
+    </div>
+    <div class="time-wrapper">
+      <h3 id="date"></h3>
+    </div>
+    <div class="navbar-wrapper">
+      <div class="navbar">
+        <a href="https://youtube.com">
+          <img
+            class="bookmark"
+            src="https://www.youtube.com/s/desktop/95c4ab27/img/favicon_144x144.png"
+          />
+        </a>
+        <a href="https://reddit.com">
+          <img
+            class="bookmark"
+            src="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-144x144.png"
+          />
+        </a>
+        <a href="https://twitch.tv">
+          <img
+            class="bookmark"
+            src="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png"
+          />
+        </a>
+        <a href="https://9anime.to/home">
+          <img
+            class="bookmark"
+            src="https://cdn.discordapp.com/attachments/1039951514631933992/1110961937459724438/9anime_107539.webp"
+          />
+        </a>
+        <a href="https://anilist.co/">
+          <img
+            class="bookmark"
+            src="https://cdn.discordapp.com/attachments/1039951514631933992/1111016742639108286/Untitled.png"
+          />
+        </a>
+        <a href="https://github.com">
+          <img class="bookmark" src="https://github.com/fluidicon.png" />
+        </a>
+      </div>
+    </div>
+    <dialog>
+      <div class="dialogTitle">Settings</div>
+      <div class="dialog-flex-container">
+        <div class="dialog-text">Image background</div>
+      </div>
+      <div class="input-wrapper">
+        <input
+          id="background"
+          class="background"
+          placeholder="Background image link..."
+        />
+      </div>
+      <div class="select-menu active">
+        <div class="select-btn" id="addbookmark-dropdown">
+          <span class="sBtn-text"
+            >Add bookmark<img
+              src="assets/arrow-16.png"
+              class="arrow arrow-down"
+              id="arrow"
+          /></span>
+          <button class="addbookmark-button">Add</button>
+        </div>
+        <ul class="options">
+          <input
+            id="bookmark-name"
+            class="bookmark-name option"
+            placeholder="Bookmark name..."
+          />
+          <input
+            id="bookmark-link"
+            class="bookmark-link option"
+            placeholder="Bookmark link..."
+          />
+          <input
+            id="bookmark-image"
+            class="bookmark-image option"
+            placeholder="Bookmark image..."
+          />
+        </ul>
+        <button class="closeDialogButton" onclick="closeDialog()">Close</button>
+      </div>
+    </dialog>
+    <div class="searchbar-wrapper">
+      <input class="searchbar" id="searchbar" placeholder="Search..." />
+    </div>
+    <div class="gear-wrapper">
+      <button class="gear-button" id="openDialogButton" onclick="openDialog()">
+        <img
+          class="gear-icon"
+          src="https://cdn.discordapp.com/attachments/1039951514631933992/1110937825312002138/Untitled.png"
+        />
+      </button>
+    </div>
+  </body>
+</html>
