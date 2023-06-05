@@ -46,7 +46,7 @@ body {
   overflow: hidden;
   position: fixed;
   bottom: 50px;
-  width: 480px;
+  width: 475px;
   border-radius: 12px;
 }
 .navbar a {
@@ -80,7 +80,7 @@ button {
   transition: 0.3s;
 }
 button:hover {
-  background: rgba(39, 39, 39, 0.779);
+  background: rgba(53, 53, 53, 0.64);
   transition: 0.3s;
 }
 .bookmark-name {
