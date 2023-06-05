@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(0, 0, 0);
+  background: url("./background/background.jpg") rgb(22, 22, 22);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, Helvetica, sans-serif;
@@ -40,13 +40,13 @@ body {
   background-color: rgba(110, 110, 110, 0.278);
   backdrop-filter: blur(4px);
   filter: drop-shadow(12px 12px 8px rgba(0, 0, 0, 0.358));
-  border-color: rgba(255, 255, 255, 0.463);
+  /* border-color: rgba(255, 255, 255, 0.463);
   border-width: 1px;
-  border-style: solid;
+  border-style: solid; */
   overflow: hidden;
   position: fixed;
   bottom: 50px;
-  width: 400px;
+  width: 475px;
   border-radius: 12px;
 }
 .navbar a {
@@ -59,28 +59,28 @@ body {
   color: white;
 }
 .navbar a:hover {
-  background-color: rgba(64, 64, 64, 0.278);
+  background-color: rgba(119, 119, 119, 0.278);
   color: white;
 }
 input {
   height: 28px;
   width: 70%;
   color: white;
-  background-color: rgb(55, 55, 55, 0.779);
+  background-color: rgba(83, 83, 83, 0.64);
   border: none;
   border-radius: 5px;
   padding: 8px;
   transition: 0.3s;
 }
 input:hover {
-  background: rgba(39, 39, 39, 0.779);
+  background: rgba(53, 53, 53, 0.64);
   transition: 0.3s;
 }
 button {
   transition: 0.3s;
 }
 button:hover {
-  background: rgba(39, 39, 39, 0.779);
+  background: rgba(53, 53, 53, 0.64);
   transition: 0.3s;
 }
 .bookmark-name {
@@ -275,7 +275,8 @@ dialog {
   transform: rotate(-180deg);
 }
 .select-menu.active .options {
-  display: none;
+  display: block;
+  opacity: 0;
   z-index: 10;
   animation-name: fadeInDown;
   -webkit-animation-name: fadeInDown;
