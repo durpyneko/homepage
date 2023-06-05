@@ -1,5 +1,10 @@
+
 body {
-  background: url("./background/background.jpg") rgb(22, 22, 22);
+  background-color:rgb(22, 22, 22);
+  background: url("background/background.jpg") no-repeat center center fixed rgb(22, 22, 22);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Arial, Helvetica, sans-serif;
