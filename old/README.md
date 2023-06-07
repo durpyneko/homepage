@@ -1,12 +1,7 @@
 # Browser 'homepage'
 Custom 'homepage' written in vanilla HTML, Javascript and CSS.
 
-Features I want to add:
-- [ ] add/remove bookmarks
-- [ ] dropdown menu for add bookmark section
-- [ ] maybe some animations? toggle on/off button
-- [ ] save settings to json file
-- [ ] notes
+'add/remove bookmarks' and other features to be fully added
 
-![Preview1](https://github.com/iDurpyDude12/homepage/assets/89787577/8e2b9fc4-c95a-4b38-aea5-7d3a51468eda)
-![Preview2](https://github.com/iDurpyDude12/homepage/assets/89787577/596726c5-c43c-4954-b154-f8017b48d99a)
+![Preview1](https://github.com/iDurpyDude12/homepage/assets/89787577/55f98603-a397-4d41-ab4c-ef28bd670c7a)
+![Preview2](https://github.com/iDurpyDude12/homepage/assets/89787577/d95eb604-1733-4375-9299-c59e050dbac8)
