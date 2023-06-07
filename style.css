@@ -1,14 +1,15 @@
 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
 body {
   background-color:rgb(22, 22, 22);
-  background: url("background/background.jpg") no-repeat center center fixed rgb(22, 22, 22);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('background/background.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
 }
 .bookmark {
   display: flex;
@@ -100,88 +101,6 @@ button:hover {
   margin-top: 4px;
   width: 93%;
 }
-.gear-wrapper {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-}
-.gear-button {
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.gear-icon {
-  height: 30px;
-  width: 30px;
-}
-.dialog-flex-container {
-  border-radius: 8px;
-  padding: 10px;
-}
-dialog {
-  background-color: rgba(110, 110, 110, 0.278);
-  backdrop-filter: blur(4px);
-  border: none;
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-  width: 50%;
-  height: 50%;
-  color: white;
-}
-.dialogTitle {
-  color: white;
-  font-size: 30px;
-  margin-bottom: 15px;
-}
-.dialog-text {
-  margin-top: 10px;
-  color: white;
-  font-size: medium;
-  margin-bottom: 5px;
-}
-.addbookmark-dropdown {
-  cursor: pointer;
-}
-.closeDialogButton {
-  background-color: rgba(55, 55, 55, 0.779);
-  border: none;
-  border-radius: 5px;
-  border-color: rgba(255, 255, 255, 0.463);
-  border-width: 1px;
-  border-style: solid;
-  width: 80px;
-  height: 40px;
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
-}
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  top: 12px;
-  right: 150%;
-}
 .searchbar-wrapper {
   display: flex;
   justify-content: center;
@@ -199,114 +118,4 @@ dialog {
   bottom: 200px;
   position: absolute;
   width: 480px;
-}
-.addbookmark-button {
-  background-color: rgba(55, 55, 55, 0.779);
-  border: none;
-  border-radius: 5px;
-  width: 80px;
-  height: 48px;
-  font-size: 20px;
-  cursor: pointer;
-  color: white;
-  right: 2px;
-}
-.arrow {
-  margin-left: 2px;
-}
-.arrow-down {
-  transform: rotate(0deg);
-  transition: transform 0.2s linear;
-}
-.arrow-up {
-  transform: rotate(-180deg);
-  transition: transform 0.2s linear;
-}
-.select-menu .select-btn {
-  display: flex;
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 400;
-  border-radius: 8px;
-  margin-top: 5px;
-  align-items: center;
-  cursor: pointer;
-  justify-content: space-between;
-  margin-left: 1px;
-}
-.select-menu .options {
-  position: absolute;
-  width: 450px;
-  overflow-y: auto;
-  max-height: 295px;
-  padding: 10px;
-  margin-top: 0px;
-  border-radius: 8px;
-  background: rgba(55, 55, 55, 0.381);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
-  animation-duration: 0.35s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 0.35s;
-  -webkit-animation-fill-mode: both;
-}
-.select-menu .options .option {
-  display: flex;
-  height: 55px;
-  padding: 0 16px;
-  border-radius: 8px;
-  align-items: center;
-  background: rgba(55, 55, 55, 0.779);
-}
-.select-menu .options .option:hover {
-  background: rgba(39, 39, 39, 0.779);
-}
-.select-menu .options .option i {
-  font-size: 25px;
-  margin-right: 12px;
-}
-.select-menu .options .option .option-text {
-  font-size: 18px;
-  color: white;
-}
-
-.select-btn i {
-  font-size: 25px;
-  transition: 0.3s;
-}
-
-.select-menu.active .select-btn i {
-  transform: rotate(-180deg);
-}
-.select-menu.active .options {
-  display: block;
-  opacity: 0;
-  z-index: 10;
-  animation-name: fadeInDown;
-  -webkit-animation-name: fadeInDown;
-  animation-duration: 0.4s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 0.4s;
-  -webkit-animation-fill-mode: both;
-}
-
-@keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 30px, 0);
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@keyframes fadeInDown {
-  from {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-  to {
-    transform: translate3d(0, 20px, 0);
-    opacity: 0;
-  }
 }
