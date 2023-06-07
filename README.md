@@ -3,7 +3,7 @@ Custom 'homepage' written in vanilla HTML, Javascript and CSS.
 
 # How to use
 ## Background: 
-Put image.jpg in background foler (can change file extention in css but naming png to jpg "might be fine")
+Put image.jpg in background folder (can change file extention in css but naming png to jpg "might be fine")
 ## Bookmarks: 
 Replace bookmark images in 'icons' folder.
 Change values in 'index.html' under .navbar
