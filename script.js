@@ -2,12 +2,8 @@ var date = new Date();
 clock = document.getElementById("clock");
 dateHTML = document.getElementById("date");
 const searchbar = document.getElementById("searchbar");
-
-searchbar.addEventListener("keypress", function (e) {
-  if (e.key === "Enter") {
-    window.location = "https://www.google.com/search?q=" + searchbar.value;
-  }
-});
+const toggleBackground = document.getElementById("toggle-background");
+var change = 0;
 
 let days = [
   "Sunday",
@@ -35,13 +31,19 @@ let months = [
 var day;
 var month;
 
-setInterval(() => {
+/* var hours = time.getHours();
+  var ampm = hours >= 12 ? "PM" : "AM"; */
+  
+function updateClock() {
   var time = new Date();
   var currentTime24 = time.toTimeString().split(" ")[0];
-  /* var hours = time.getHours();
-  var ampm = hours >= 12 ? "PM" : "AM"; */
   clock.innerHTML = currentTime24;
-}, 1000);
+}
+
+updateClock();
+
+setInterval(updateClock, 1000);
+
 days.forEach((days, index) => {
   if (index == new Date().getDay()) {
     day = days;
@@ -54,3 +56,37 @@ months.forEach((months, index) => {
 });
 
 dateHTML.innerHTML = day + " " + date.getDate() + " " + month;
+
+searchbar.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    window.location = "https://www.google.com/search?q=" + searchbar.value;
+  }
+});
+
+toggleBackground.addEventListener("click", () => {
+  if (change == 0) {
+    change = 1;
+    document.body.style.background = "rgb(8, 8, 8)";
+    document.cookie = "toggle=color";
+    return;
+  }
+  if (change == 1) {
+    change = 0;
+    document.body.style.background = "";
+    document.cookie = "toggle=image";
+    return;
+  }
+});
+
+window.onload = function () {
+  if (document.cookie == "toggle=color") {
+    document.body.style.background = "rgb(8, 8, 8)";
+    change = 1;
+    return;
+  }
+  if (document.cookie == "toggle=image") {
+    document.body.style.background = "";
+    change = 0;
+    return;
+  }
+};
