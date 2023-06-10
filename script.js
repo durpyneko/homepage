@@ -2,8 +2,6 @@ var date = new Date();
 clock = document.getElementById("clock");
 dateHTML = document.getElementById("date");
 const searchbar = document.getElementById("searchbar");
-const toggleBackground = document.getElementById("toggle-background");
-var change = 0;
 
 let days = [
   "Sunday",
@@ -62,31 +60,3 @@ searchbar.addEventListener("keypress", function (e) {
     window.location = "https://www.google.com/search?q=" + searchbar.value;
   }
 });
-
-toggleBackground.addEventListener("click", () => {
-  if (change == 0) {
-    change = 1;
-    document.body.style.background = "rgb(8, 8, 8)";
-    document.cookie = "toggle=color";
-    return;
-  }
-  if (change == 1) {
-    change = 0;
-    document.body.style.background = "";
-    document.cookie = "toggle=image";
-    return;
-  }
-});
-
-window.onload = function () {
-  if (document.cookie == "toggle=color") {
-    document.body.style.background = "rgb(8, 8, 8)";
-    change = 1;
-    return;
-  }
-  if (document.cookie == "toggle=image") {
-    document.body.style.background = "";
-    change = 0;
-    return;
-  }
-};
